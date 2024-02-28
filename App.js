@@ -1,33 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Cabeçalho from './src/components/Cabecalho';
+import Cabecalho from './src/components/Cabecalho';
 import Corpo from './src/components/Corpo';
 import Rodape from './src/components/Rodape';
-import { conteinerPerson, textPerson } from "./src/styles/StylesSheet";
+import { style } from './src/styles/estilo';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={style.container}>
 
-      <Cabeçalho/>
+{/* /COMPONENTE CABEÇALHO */}
+      <Cabecalho/>
 
+{/* /COMPONENTE CORPO */}
       <Corpo/>
 
+{/* /COMPONENTE RODAPÉ */}
       <Rodape/>
 
-      
-
       <Text>Atividade Separando Componentes</Text>
+
       <StatusBar style="auto" />
+      
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

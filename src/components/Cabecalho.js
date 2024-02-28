@@ -1,21 +1,10 @@
 import { Text, View, StyleSheet } from 'react-native';
-
+import { style } from '../styles/estilo';
 export default function SecondComponent() {
 
 return (
-<View style={styles.container}>
-<Text style={{ color: 'white' , fontSize: 30 }}>Cabeçalho</Text>
+<View style={style.container}>
+<Text>CABEÇALHO</Text>
 </View>
 );
 }
-
-const styles = StyleSheet.create({
-container: {
-flex: 1,
-backgroundColor: '#fff',
-justifyContent: 'center',
-alignItems: 'center',
-backgroundColor: 'black',
-width: '100%',
-}
-});
