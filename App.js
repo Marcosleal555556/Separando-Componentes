@@ -1,10 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Cabeçalho from './src/components/Cabecalho';
+import Corpo from './src/components/Corpo';
+import Rodape from './src/components/Rodape';
+import { conteinerPerson, textPerson } from "./src/styles/StylesSheet";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+      <Cabeçalho/>
+
+      <Corpo/>
+
+      <Rodape/>
+
+      
+
+      <Text>Atividade Separando Componentes</Text>
       <StatusBar style="auto" />
     </View>
   );
